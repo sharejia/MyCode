@@ -4,8 +4,8 @@
  * @Author: Sharejia
  * @E-mail: sharejia@outlook.com
  * @Date:   2019-03-12 20:14:15
- * @Last Modified by:   贾鑫晨
- * @Last Modified time: 2019-03-13 23:29:55
+ * @Last Modified by:   sharejia
+ * @Last Modified time: 2019-03-14 08:27:14
  */
 
 /**
@@ -79,8 +79,6 @@ class Work
 
 		if($sum == $this_num){
 			return $this_num;
-			echo "<pre>";
-			echo $this_num;
 		}
 	}
 
