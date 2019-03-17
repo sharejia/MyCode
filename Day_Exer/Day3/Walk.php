@@ -6,5 +6,6 @@
  * Time: 8:06
  */
 interface Walk{
-    public function walk();
+   public function Name();
+   public function Age();
 }
