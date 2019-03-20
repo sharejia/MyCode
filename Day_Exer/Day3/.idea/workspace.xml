@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="342719c6-3d7a-47c3-bd42-b0c0bcc08270" name="默认" comment="" />
+    <list default="true" id="342719c6-3d7a-47c3-bd42-b0c0bcc08270" name="默认" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week_1/Person.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week_1/Student.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week_1/Walk.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week_1/index1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week_1/week1.php" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,12 +47,22 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-954217340">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -52,6 +70,7 @@
         <option value="$PROJECT_DIR$/Walk.php" />
         <option value="$PROJECT_DIR$/Person.php" />
         <option value="$PROJECT_DIR$/Student.php" />
+        <option value="$PROJECT_DIR$/day3.php" />
       </list>
     </option>
   </component>
@@ -73,7 +92,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -85,11 +103,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../tp5exer" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
@@ -118,16 +137,18 @@
       <updated>1552576910026</updated>
       <workItem from="1552576911979" duration="126000" />
       <workItem from="1552608337640" duration="497000" />
+      <workItem from="1552828255799" duration="461000" />
+      <workItem from="1552875869204" duration="31000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="623000" />
+    <option name="totallyTimeSpent" value="1115000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25457317" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25914633" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -155,9 +176,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/day3.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Walk.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -176,6 +194,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="35" column="126" selection-start-line="35" selection-start-column="126" selection-end-line="35" selection-end-column="126" />
         </state>
       </provider>
     </entry>

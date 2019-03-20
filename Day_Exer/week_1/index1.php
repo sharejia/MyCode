@@ -5,7 +5,7 @@
  * @E-mail: sharejia@outlook.com
  * @Date:   2019-03-18 09:10:19
  * @Last Modified by:   贾鑫晨
- * @Last Modified time: 2019-03-18 09:15:58
+ * @Last Modified time: 2019-03-18 09:31:40
  */
 
 include('Student.php');
@@ -19,12 +19,12 @@ $info7 = new Student('贾鑫晨','20');
 $info8 = new Student('贾鑫晨','20');
 $info9 = new Student('贾鑫晨','21');
 
-
 $Max = 1;
 
 
 for($i=1;$i<=9;$i++){
-	if($info.$i['age'] > $Max){
+	if('$info'.$i.'[age]' > $Max){
+		echo 11;die();
 		$Max_name = $info.$i['name'];
 	}
 }
