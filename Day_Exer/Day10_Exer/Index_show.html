@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./bootstrap-3.3.7/dist/css/bootstrap.css">
+</head>
+<body>
+<center>
+    <div class="col-sm-9 col-md-offset-1">
+    <h3>数据展示</h3>
+    <table border="1" width="600" class="table ">
+        <tr class="success">
+            <th>品名</th>
+            <th>价格</th>
+            <th>产地</th>
+            <th>类型</th>
+        </tr>
+        <tbody class="Data_box">
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+        </tbody>
+    </table>
+        <div class="pages_box">
+            <a href="javascript:;" data-page="1" class="page">1</a>
+        </div>
+    </div>
+</center>
+</body>
+</html>
+<script src="http://47.94.233.238/JQuery/jquery-1.8.3.min.js"></script>
+<script>
+    $(document).ready(function () {
+        GetData(1);
+    });
+
+    //分页
+    $(".pages_box").on("click",".page",function () {
+        var page = $(this).attr("data-page");
+
+        GetData(page);
+    });
+
+    function GetData(page = ''){
+        $.get('./List_Db/getData.php',{"page":page},function (msg) {
+            //定义空字符串备用
+            var str = "";
+            var pages = '';
+            //将json数据转化为对象
+            var msg = $.parseJSON(msg);
+
+            //拼接数据流
+            $.each(msg.data,function (k,v) {
+                str += "<tr><td>"+v.goods_name+"</td><td>"+v.goods_price+"</td><td>"+v.goods_addr+"</td><td>"+v.goods_type+"</td></tr>";
+            });
+
+            //拼接分页数据
+            for(var i=1;i<=msg.page_nums;i++){
+                pages += "            <a href=\"javascript:;\" data-page=\""+i+"\" class=\"page\">"+i+"</a>\n";
+            }
+
+            //替换HTML
+            $(".Data_box").html(str);
+            $(".pages_box").html(pages);
+        });
+    }
+</script>

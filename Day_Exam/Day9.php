@@ -4,8 +4,8 @@
  * @Author: Sharejia
  * @E-mail: sharejia@outlook.com
  * @Date:   2019-03-22 08:38:09
- * @Last Modified by:   贾鑫晨
- * @Last Modified time: 2019-03-22 08:49:35
+ * @Last Modified by:   sharejia
+ * @Last Modified time: 2019-03-22 09:49:58
  */
 
 class Day9{
@@ -32,8 +32,11 @@ class Day9{
 					$param[$j] = $right;
 				}
 
+
 				echo "<pre>";
-				var_dump($param);
+				echo $i.','.$j;
+				// echo "<pre>";
+				// var_dump($param);
 			}
 		}
 	}
