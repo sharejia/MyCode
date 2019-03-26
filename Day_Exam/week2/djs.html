@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<center>
+		<span>距离2019-03-26 9:10还有:&nbsp;&nbsp;&nbsp;&nbsp;</span>
+		<span><text class="days"></text>天</span>
+		<span><text class="hours"></text>小时</span>
+		<span><text class="minutes"></text>分钟</span>
+		<span><text class="seconds"></text>秒</span>
+	</center>
+	<input type="hidden" name="" value="" placeholder="">
+</body>
+</html>
+<script src="jquery-1.8.3.min.js"></script>
+<script>
+	$(function(){
+		$.get('week2.php',{},function(msg){
+			//全局变量，标准时间戳
+			$("input[type='hidden']").val(msg);
+			setInterval(Time,1000);
+		});
+	});
+
+	function Time(){
+		var endTime = "2019-03-26 9:10";
+		var Time = new Date(endTime);
+		var new_endTime = Time.getTime(Time);
+		var new_endTime = new_endTime / 1000;
+
+		//结束时间减去目前时间（单位秒）
+		var nowTime = $("input[type='hidden']").val();
+		var diff_time = new_endTime - nowTime;
+		
+		//计算各个单位 秒 分钟 小时 天
+		var s = Math.floor(diff_time%60);
+		var m = Math.floor(diff_time/60%60);
+		var h = Math.floor(diff_time/60/60%24);
+		var d = Math.floor(diff_time/60/60/24);
+
+		//赋值
+		$(".days").html(d);
+		$(".hours").html(h);
+		$(".minutes").html(m);
+		$(".seconds").html(s);
+		
+		//将从隐藏域获取的时间戳转化为整型
+		var nowTime = parseInt(nowTime) + 1;
+		$("input[type='hidden']").val(nowTime);
+	}
+
+
+
+
+
+</script>
