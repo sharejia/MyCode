@@ -4,8 +4,8 @@
  * @Author: Sharejia
  * @E-mail: sharejia@outlook.com
  * @Date:   2019-03-29 08:38:39
- * @Last Modified by:   贾鑫晨
- * @Last Modified time: 2019-03-29 09:15:11
+ * @Last Modified by:   sharejia
+ * @Last Modified time: 2019-03-29 09:38:29
  */
 
 class Day15{
@@ -21,7 +21,7 @@ class Day15{
 			$right_arr	= array_slice($param,$k+1);
 
 			$left_sear  = array_search($v,$left_arr);
-			$right_sear  = array_search($v,$right_arr);
+			$right_sear = array_search($v,$right_arr);
 			
 			if($left_sear === false && $right_sear === false){
 				return "符合条件的第一个位置在第".($k+1).'位';
