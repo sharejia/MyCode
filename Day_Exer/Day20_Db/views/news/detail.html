@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        input{
+
+        }
+    </style>
+</head>
+<body>
+<center>
+    <h3>详细信息</h3>
+    <table>
+        <tr>
+            <td>编号：</td>
+            <td>
+                <input type="text" value="<?php echo $data['user_id']?>" disabled>
+            </td>
+        </tr>
+        <tr>
+            <td>姓名：</td>
+            <td>
+                <input type="text" value="<?php echo $data['user_name']?>" disabled>
+            </td>
+        </tr>
+        <tr>
+            <td>性别：</td>
+            <td>
+                <input type="text" value="<?php echo $data['user_sex']?>" disabled>
+            </td>
+        </tr>
+        <tr>
+            <td>出生年：</td>
+            <td>
+                <input type="text" value="<?php echo $data['user_born']?>" disabled>
+            </td>
+        </tr>
+        <tr>
+            <td>密码：</td>
+            <td>
+                <input type="text" value="<?php echo $data['user_pwd']?>" disabled>
+            </td>
+        </tr>
+    </table>
+</center>
+</body>
+</html>

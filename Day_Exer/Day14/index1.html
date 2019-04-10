@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button type="">按钮</button>
+</body>
+</html><script src="jquery-1.8.3.min.js"></script>
+<script>
+	$("button").click(function(){
+		getData();
+	});
+
+	function getData(){
+		$.ajax({
+			url:"http://apijsonp.com/api.php",
+			type:"get",
+			data:{},
+			dataType:"jsonp",
+			jsonp:"callback",
+			success(msg){
+				console.log(msg);
+			}
+		})
+	}
+</script>

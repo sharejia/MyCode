@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<center>
+		<h3>用户信息展示</h3>
+		<table border="1" width="600">
+			<tr>
+				<th>#</th>
+				<th>姓名</th>
+				<th>性别</th>
+				<th>出生</th>
+				<th>操作</th>
+			</tr>
+			<?php foreach($data['data'] as $k => $v){?>
+				<tr>
+					<td><?php echo $v['user_id'];?></td>
+					<td><?php echo $v['user_name'];?></td>
+					<td><?php echo $v['user_sex'];?></td>
+					<td><?php echo $v['user_born'];?></td>
+					<td>
+						<a href="index.php?c=News&a=find&user_id=<?php echo $v['user_id'];?>">详情</a>
+					</td>
+				</tr>
+			<?php }?>
+		</table>
+	</center>
+</body>
+</html>
